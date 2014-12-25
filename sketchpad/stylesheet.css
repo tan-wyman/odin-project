@@ -2,7 +2,7 @@
 
 }
 
-.pixel_container {
+#pixel_container {
 
 }
 
@@ -16,5 +16,5 @@
 }
 
 .new_row {
-
+    clear: both;
 }

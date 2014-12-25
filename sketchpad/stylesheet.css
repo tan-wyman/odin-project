@@ -7,7 +7,7 @@
 }
 
 .pixel {
-    display: float;
+    float: left;
     border: 1px dotted gray;
 }
 

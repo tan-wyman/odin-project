@@ -7,11 +7,12 @@
 }
 
 .pixel {
-
+    display: float;
+    border: 1px dotted gray;
 }
 
 .highlight {
-
+    background-color: blue;
 }
 
 .new_row {

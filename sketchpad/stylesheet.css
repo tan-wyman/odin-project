@@ -3,12 +3,16 @@
 }
 
 #pixel_container {
+    overflow: auto;
+    margin: auto;
+    width: 900px;
+    border: 5px solid gray;
 
 }
 
 .pixel {
     float: left;
-    border: 1px dotted gray;
+    border: 0px;
 }
 
 .highlight {

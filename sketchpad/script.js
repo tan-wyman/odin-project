@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    var pixel_row = $('#pixel_row').val();
-    var pixel_col = $('#pixel_col').val();
+    var pixel_row = window.prompt('Number of rows:', '16');
+    var pixel_col = window.prompt('Number of columns:', '16');
     var pixel_size = $('#pixel_container').width() / pixel_row;
     var pixel = '<div class="pixel"></div>';
     var new_row = '<div class="new_row"></div>';
@@ -35,6 +35,7 @@ $(document).ready(function() {
     //reset pixels on button press
     $('#pixel_setting').on('click', '#pixel_reset', pixel_reset);
 
-    //set row/col on button press
-    $('#pixel_setting').on('click', '#pixel_set', pixel_populate);
+    //display row/col
+    $('#pixel_row_count').append('<p>' +  pixel_row + '</p>');
+    $('#pixel_col_count').append('<p>' +  pixel_col + '</p>');
 });

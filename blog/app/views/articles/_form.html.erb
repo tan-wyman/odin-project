@@ -3,7 +3,7 @@
   <ul>
     <% @article.errors.full_messages.each do |error| %>
       <li><% error %></li>
-      <% end %>
+    <% end %>
   </ul>
   <p>
     <%= f.label :title %><br>
@@ -16,6 +16,10 @@
   <p>
     <%= f.submit %>
   </p>
-  <% end %>
+  <p>
+    <%= f.label :tag_list %><br>
+    <%= f.text_field :tag_list %>
+  </p>
+<% end %>
 
 
